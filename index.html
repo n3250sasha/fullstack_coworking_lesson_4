@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <title>My project with BEM</title>
+</head>
+<body>
+<!--
+модифікатор -- вигляд блоку
+елемент __ всередині блоку
+-->
+<!--first section slider-->
+<section class="section section--with-bg section--with-bg-forest">
+  <div class="section__content section__content--center section__content--top">
+    <!-- header -->
+    <!--logo-->
+    <div class="header header--padding">
+      <div class="logo header__logo">
+        <img src="src/images/logo.png">
+      </div>
+      <!--end logo-->
+      <!--navigation-->
+      <div class="nav header__nav-responsive"><i class="fa fa-bars color-white" aria-hidden="true"></i></div>
+      <div class="nav header__nav">
+        <ul class="nav__items">
+          <li class="nav__item nav__item-active"><a href="#">HOME</a></li>
+          <li class="nav__item"><a href="#">ABOUT</a></li>
+          <li class="nav__item"><a href="#">EXPERTISE</a></li>
+          <li class="nav__item"><a href="#">TEAMS</a></li>
+          <li class="nav__item"><a href="#">WORKS</a></li>
+          <li class="nav__item"><a href="#">PEOPLE&nbspSAY</a></li>
+          <li class="nav__item"><a href="#">CONTACT</a></li>
+        </ul>
+      </div>
+      <!--end navigation-->
+    </div>
+    <!--end header-->
+
+    <!--slider-->
+    <div class="slider">
+      <h2 class="slider__title color-white align_text_center">We Are Awesome Creative Agency</h2>
+      <div class="divider divider--blue"></div>
+      <div class="slider__text-wrapper">
+        <p class="slider__text color-white align_text_center">
+          This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+          lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet
+          nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+        </p>
+      </div>
+      <div class="flex-center padding-bottom-10-percent">
+        <button class="button slider__button">LEARN MORE</button>
+      </div>
+      <div class="circle-items flex-center">
+        <span class="circle-items__item circle-items__item--active"></span>
+        <span class="circle-items__item"></span>
+        <span class="circle-items__item"></span>
+        <span class="circle-items__item"></span>
+      </div>
+    </div>
+    <!--end slider-->
+  </div>
+</section>
+<!-- end first section slider-->
+
+<!--
+модифікатор -- вигляд блоку
+елемент __ всередині блоку
+-->
+
+<!-- two section OUR STORY-->
+<section class="section">
+  <div class="section__content section__content--center">
+    <div class="our-story">
+      <div class="our-story__img">
+        <img src="src/images/replace_with_logo.png" alt="">
+      </div>
+      <div class="our-story__text">
+        <h3 class="section__title">OUR STORY</h3>
+        <p class="section__p section__p-our-story">
+          This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+          Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+          Duis sed odio sit amet nibh vulputate cursus
+        </p>
+        <p class="section__p section__p-our-story">
+          Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non
+          mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia
+          nostra, per inceptos himenaeos.
+        </p>
+        <div class="wrapper-button button__our-story">
+          <button class="button">LEARN MORE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end two section OUR STORY-->
+
+<!-- three section WATCH OUR STORY-->
+<section class="section section--with-bg section--with-bg-town">
+  <div class="section__content section__content--center">
+    <div class="video">
+      <div class="video__img padding-bottom-10-percent">
+        <img src="src/images/play.png">
+      </div>
+      <span class="video__label color-white">WATCH OUR STORY</span>
+    </div>
+  </div>
+</section>
+<!-- end three section WATCH OUR STORY-->
+
+<!-- four section Expertise -->
+<section class="section">
+  <div class="section__content section__content--center">
+    <div class="header-title">
+      <h3 class="section__title align_text_center">EXPERTISE</h3>
+      <p class="section__p align_text_center">Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
+      <div class="divider divider--gray"></div>
+    </div>
+
+    <div class="flex flex-wrap">
+      <div class="expertise">
+        <div class="expertise__img">
+          <img src="src/images/expertise_1.png">
+        </div>
+        <h4 class="expertise__title">WEB DESIGN & DEVELOPMENT</h4>
+        <p class="section__p align_text_center">
+          This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+        </p>
+      </div>
+
+      <div class="expertise">
+        <div class="expertise__img">
+          <img src="src/images/expertise_2.png">
+        </div>
+        <h4 class="expertise__title">BRANDING IDENTITY</h4>
+        <p class="section__p center">
+          This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+        </p>
+      </div>
+
+      <div class="expertise">
+        <div class="expertise__img">
+          <img src="src/images/expertise_3.png">
+        </div>
+        <h4 class="expertise__title">MOBILE APP</h4>
+        <p class="section__p center">
+          This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+        </p>
+      </div>
+
+      <div class="expertise">
+        <div class="expertise__img">
+          <img src="src/images/expertise_4.png">
+        </div>
+        <h4 class="expertise__title">SEARCH ENGINE OPTIMIZATION</h4>
+        <p class="section__p center">
+          This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+        </p>
+      </div>
+
+      <div class="expertise">
+        <div class="expertise__img">
+          <img src="src/images/expertise_5.png">
+        </div>
+        <h4 class="expertise__title">GAME DEVELOPMENT</h4>
+        <p class="section__p center">
+          This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+        </p>
+      </div>
+
+      <div class="expertise">
+        <div class="expertise__img">
+          <img src="src/images/expertise_6.png">
+        </div>
+        <h4 class="expertise__title">MADE WITH LOVE</h4>
+        <p class="section__p center">
+          This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet Aenean.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--end four section expertise-->
+
+<!--five section TEAM-->
+<section class="section section--with-bg section--with-bg-forest">
+  <div class="section__content section__content--center">
+    <div class="header-title">
+      <h3 class="section__title section__title-team-font align_text_center">MEET OUR AMAZING TEAM</h3>
+      <p class="section__p align_text_center color-white">Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
+      <div class="divider divider--gray"></div>
+    </div>
+
+    <div class="flex flex-wrap flex-space-between">
+      <div class="team team--border">
+        <div class="team__img">
+          <img src="src/images/team_image.png">
+        </div>
+        <h4 class="team__title align_text_center color-white">SEMF UCUK</h4>
+        <p class="section__p section__p-team align_text_center">
+          CEO & FOUNDER
+        </p>
+      </div>
+
+      <div class="team team--border">
+        <div class="team__img">
+          <img src="src/images/team_image.png">
+        </div>
+        <h4 class="team__title align_text_center color-white">SEMF UCUK</h4>
+        <p class="section__p section__p-team align_text_center">
+          CEO & FOUNDER
+        </p>
+      </div>
+
+      <div class="team team--border">
+        <div class="team__img">
+          <img src="src/images/team_image.png">
+        </div>
+        <h4 class="team__title align_text_center color-white">SEMF UCUK</h4>
+        <p class="section__p section__p-team align_text_center">
+          CEO & FOUNDER
+        </p>
+      </div>
+
+      <div class="team team--border">
+        <div class="team__img">
+          <img src="src/images/team_image.png">
+        </div>
+        <h4 class="team__title align_text_center color-white">SEMF UCUK</h4>
+        <p class="section__p align_text_center">
+          CEO & FOUNDER
+        </p>
+      </div>
+    </div>
+
+    <p class="section__p section__p-team align_text_center color-white padding-top-5-percent">
+      Become part of our dream team, let’s join us !
+    </p>
+
+    <div class="flex-center">
+      <button class="button slider__button">LEARN MORE</button>
+    </div>
+
+  </div>
+</section>
+<!--end  five section team-->
+
+<!--six section our works-->
+<section class="section">
+  <div class="section__content section__content--center">
+    <div class="header-title header-title--our-works">
+      <h3 class="section__title section__title-our-works align_text_center">OUR WORKS</h3>
+      <p class="section__p section__p-works align_text_center">
+        See All Project in dribbble <img src="src/images/right154.png" alt="">
+      </p>
+    </div>
+  </div>
+
+  <!-- our works many images -->
+  <div class="our-works-gallery our-works-gallery--items flex-center flex-wrap">
+    <!-- top six images -->
+    <div class="our-works-gallery__item">
+      <img src="src/images/your_img_1.png">
+    </div>
+
+    <div class="our-works-gallery__item">
+      <img src="src/images/your_img_2.png">
+    </div>
+
+    <div class="our-works-gallery__item">
+      <img src="src/images/your_img_3.png">
+    </div>
+
+    <div class="our-works-gallery__item">
+      <img src="src/images/your_img_4.png">
+    </div>
+
+    <div class="our-works-gallery__item">
+      <img src="src/images/your_img_5.png">
+    </div>
+
+    <div class="our-works-gallery__item">
+      <img src="src/images/your_img_6.png">
+    </div>
+
+    <!-- bottom six images -->
+    <div class="our-works-gallery__item">
+      <img src="src/images/your_img_2.png">
+    </div>
+
+    <div class="our-works-gallery__item">
+      <img src="src/images/your_img_1.png">
+    </div>
+
+    <div class="our-works-gallery__item">
+      <img src="src/images/your_img_4.png">
+    </div>
+
+    <div class="our-works-gallery__item">
+      <img src="src/images/your_img_3.png">
+    </div>
+
+    <div class="our-works-gallery__item">
+      <img src="src/images/your_img_6.png">
+    </div>
+
+    <div class="our-works-gallery__item">
+      <img src="src/images/your_img_5.png">
+    </div>
+  </div>
+
+  <div class="flex-center padding-top-5-percent padding-bottom-5-percent">
+    <button class="button slider__button">LOAD MORE</button>
+  </div>
+</section>
+<!-- end six section our works-->
+
+<!-- seven section quotes -->
+<section class="section section--with-bg section--with-bg-forest">
+  <div class="section__content section__content--center">
+    <div class="quotes flex-space-between">
+      <div class="quotes__content">
+        <h3 class="quotes__title-h3 align_text_center color-white">“</h3>
+        <p class="section__p section__p-quote align_text_center color-white">
+          This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+          lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet
+          nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a
+          ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
+        </p>
+        <h4 class="quotes__title-h4 align_text_center color-white">JANE GALADRIEL</h4>
+        <p class="quotes__p section__p-team align_text_center">
+          CEO TENGKUREP
+        </p>
+
+        <div class="quotes-photo quotes-photo--items flex-center padding-top-5-percent">
+          <!-- left arrow -->
+          <div class="arrow arrow--left">
+            <img src="src/images/left.png">
+          </div>
+
+          <!-- photos -->
+          <div class="quotes-photo--item">
+            <img src="src/images/six_your_img_1.png">
+          </div>
+          <div class="quotes-photo--item">
+            <img src="src/images/six_your_img_2.png">
+          </div>
+          <div class="quotes-photo--item">
+            <img src="src/images/six_your_img_3.png">
+          </div>
+          <div class="quotes-photo--item">
+            <img src="src/images/six_your_img_4.png">
+          </div>
+          <div class="quotes-photo--item">
+            <img src="src/images/six_your_img_5.png">
+          </div>
+
+          <!-- right arrow -->
+          <div class="arrow arrow--right">
+            <img src="src/images/right.png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end seven section quotes-->
+
+<!-- eighth section logo clients -->
+<section class="section">
+  <div class="section__content section__content--center">
+
+
+    <div class="container container--two-column">
+
+      <div class="contact-us-form">
+        <form action="">
+          <h2 class="section__title padding-bottom-5-percent">GIVE US A GOOD NEWS</h2>
+
+          <div class="input-form">
+            <input type="text" placeholder="Name" class="input-form__text">
+          </div>
+          <div class="input-form">
+            <input type="email" placeholder="Email" class="input-form__text">
+          </div>
+          <div class="input-form">
+            <input type="text" placeholder="Subject" class="input-form__text">
+          </div>
+          <div class="input-form">
+            <textarea rows="10" placeholder="Your massage" class="input-form__text"></textarea>
+          </div>
+          <button class="button button__submit">SUBMIT</button>
+        </form>
+      </div>
+
+      <div class="clients">
+        <h2 class="section__title section__title-clients padding-bottom-5-percent">OUR HAPPY CLIENTS</h2>
+        <!-- logo clients -->
+        <div class="clients__item-left">
+          <div class="clients__item">
+            <img src="src/images/zara_logo.png">
+          </div>
+          <div class="clients__item">
+            <img src="src/images/barneys_new_york_logo.png">
+          </div>
+          <div class="clients__item">
+            <img src="src/images/calvin_klein_logo.png">
+          </div>
+          <div class="clients__item">
+            <img src="src/images/converse_logo.png">
+          </div>
+          <div class="clients__item">
+            <img src="src/images/levis_logo.png">
+          </div>
+        </div>
+
+        <div class="clients__item-right">
+          <div class="clients__item">
+            <img src="src/images/logo_of_mango_(new).png">
+          </div>
+          <div class="clients__item">
+            <img src="src/images/gucci_logo.png">
+          </div>
+          <div class="clients__item">
+            <img src="src/images/logo_nike.png">
+          </div>
+          <div class="clients__item">
+            <img src="src/images/puma_logo.png">
+          </div>
+          <div class="clients__item">
+            <img src="src/images/billabong.png">
+          </div>
+        </div>
+        <!-- end logo clients -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end eighth section logo clients  -->
+
+<!-- nine section footer -->
+<section class="section section--with-bg section--with-bg-desktop">
+  <div class="section__content section__content--center">
+    <!--top footer-->
+    <div class="footer footer__contents-row">
+
+      <!-- left footer block -->
+      <div class="footer__column footer__column-logo color-white">
+        <!--logo-->
+        <div class="logo footer__logo">
+          <img src="src/images/logo.png">
+        </div>
+        <!--end logo-->
+        <p class="section__p-footer">
+          lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet
+          auctror a ornare odio non mauris vitae erat in elit
+        </p>
+      </div>
+      <!-- end left footer block-->
+
+      <!-- center footer block -->
+      <div class="footer__column footer__column-contact color-white">
+        <h4 class="footer__column-title">OUR STUDIO</h4>
+        <div class="footer__column-text padding-bottom-5-percent">
+          <div class="footer__column-img">
+            <img src="src/images/big104.png">
+          </div>
+          <p class="section__p-footer">
+            Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat 11480 - Indonesia
+          </p>
+        </div>
+        <div class="footer__column-text">
+          <div class="footer__column-img">
+            <img src="src/images/phone351.png">
+          </div>
+          <p class="section__p-footer">
+            (+62) 21-2224 3333
+          </p>
+        </div>
+      </div>
+      <!-- end center footer block-->
+
+      <!-- right footer block -->
+      <div class="footer__column-newsletter color-white">
+        <h4 class="footer__column-title">STAY IN TOUCH</h4>
+        <div class="footer__column-text padding-bottom-5-percent">
+
+          <div class="form-group form-group__footer">
+            <form class="form form--footer flex-space-between">
+              <input type="text" name="subscribe" placeholder="Subscribe our news letter"
+                     class="input-form__text input-form__text-newsletter">
+              <button class="button button--newsletter" type="submit">
+                <img src="src/images/sent.png">
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- social network -->
+        <div class="social_networks">
+          <div class="social_networks_items">
+            <a href="#"> <img src="src/images/facebook.png"></a>
+          </div>
+          <div class="social_networks_items">
+            <a href="#"> <img src="src/images/twitter.png"></a>
+          </div>
+          <div class="social_networks_items">
+            <a href="#"> <img src="src/images/dribbble.png"> </a>
+          </div>
+          <div class="social_networks_items">
+            <a href="#"> <img src="src/images/instagram.png"></a>
+          </div>
+          <div class="social_networks_items">
+            <a href="#"> <img src="src/images/gplus.png"> </a>
+          </div>
+          <div class="social_networks_items">
+            <a href="#"> <img src="src/images/youtube.png"></a>
+          </div>
+        </div><!-- end social network -->
+      </div>
+    </div>
+    <!--end top footer-->
+
+    <!-- bottom footer menu and copyright -->
+    <div class="footer__bottom flex-space-between padding-top-5-percent">
+      <div class="nav footer__nav-responsive"><i class="fa fa-bars color-white" aria-hidden="true"></i></div>
+      <nav class="nav footer__nav">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#">HELP</a></li>
+          <li class="nav__item"><a href="">TERMS&nbsp&&nbspCONDITION</a></li>
+          <li class="nav__item"><a href="#">PRIVACY</a></li>
+        </ul>
+      </nav>
+      <div class="copyrate color-white">
+        <p>Copyright © 2015 - Tajem Creative</p>
+      </div>
+    </div>
+    <!-- end bottom footer menu and copyright -->
+  </div>
+</section>
+<!-- end nine section footer -->
+</body>
+</html>
