@@ -255,7 +255,7 @@ body {
 
 /* end four section Expertise */
 
-/**/
+/* five section TEAM */
 .section__title-team-font {
   font-size: 32px;
   color: white;
@@ -279,9 +279,6 @@ body {
   margin: 0 0 2%;
 }
 
-/**/
-
-/**/
 .section__p-works {
   margin: 0;
 }
@@ -290,7 +287,7 @@ body {
   padding-left: 5px;
 }
 
-/**/
+/* end five section TEAM*/
 
 /* six section our works*/
 .header-title--our-works {
@@ -606,16 +603,6 @@ body {
 }
 
 @media screen and (max-width: 530px) {
-  .footer__nav {
-    display: none;
-  }
-
-  .footer__nav-responsive {
-    display: block;
-    text-align: right;
-    font-size: 35px;
-  }
-
   .section__title-our-works {
     width: 100%;
   }
@@ -624,6 +611,16 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .footer__nav {
+    display: none;
+  }
+
+  .footer__nav-responsive {
+    display: block;
+    text-align: right;
+    font-size: 35px;
   }
 }
 
@@ -650,4 +647,5 @@ body {
     width: 50%;
   }
 }
+
 /* end MEDIA */
